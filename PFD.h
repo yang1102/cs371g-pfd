@@ -15,7 +15,11 @@
 #include <string>   // string
 #include <utility>  // pair
 
+#include <vector>
+#include <list>
+
 using namespace std;
+
 
 // ------------
 // PFD_read
@@ -28,8 +32,7 @@ using namespace std;
  * @param j an int
  * @return true if the read is successful, otherwise false
  */
-bool PFD_read(istream &r, int &i, int &j);
-
+bool PFD_read(istream &r, vector<list<int>>& data, vector<int>& degree);
 // ------------
 // PFD_eval
 // ------------
@@ -39,7 +42,7 @@ bool PFD_read(istream &r, int &i, int &j);
  * @param j the end       of the range, inclusive
  * @return the max cycle length of the range [i, j)
  */
-int PFD_eval(int i, int j);
+vector<int> PFD_eval(vector<list<int>>& data, vector<int>& degree) ;
 
 // -------------
 // PFD_print
@@ -52,7 +55,7 @@ int PFD_eval(int i, int j);
  * @param j the end       of the range, inclusive
  * @param v the max cycle length
  */
-void PFD_print(ostream &w, int i, int j, int v);
+void PFD_print(ostream &w, vector<int> result);
 
 // -------------
 // PFD_solve
