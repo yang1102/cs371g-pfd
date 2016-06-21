@@ -29,7 +29,7 @@ bool PFD_read(istream &r, vector<list<int>>& data, vector<int>& degree) {
     return false;
 
   r >> j;
-  assert( i > 0 && j > 0);
+  assert( i > 0 && j >= 0);   
   for (int k = 0; k < i; ++k)
   {
     list<int> temp;
