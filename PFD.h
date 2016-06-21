@@ -14,13 +14,13 @@
 #include <iostream> // istream, ostream
 #include <string>   // string
 #include <utility>  // pair
-
+#include <queue>
 #include <vector>
 #include <list>
 
 using namespace std;
 
-
+extern priority_queue<int,vector<int>,greater<int>> priorityQueue;
 // ------------
 // PFD_read
 // ------------
