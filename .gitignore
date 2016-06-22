@@ -23,4 +23,14 @@ Thumbs.db
 
 # Project Requairement #
 ########################
-
+RunPFD
+*.tmp
+TestPFD.gcda
+TestPFD.gcno
+PFD-tests/
+latex/
+Doxyfile
+TestPFD
+gmon.out
+PFD.gcno
+PFD.gcda

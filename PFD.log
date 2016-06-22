@@ -1,0 +1,60 @@
+commit 10efd2204892e93412165f59a3f5864a80bf6461
+Author: Shuoyi Yang <yangshy2012@gmail.com>
+Date:   Tue Jun 21 21:24:58 2016 -0500
+
+    This closes #5, closes #6, closes #9 and fixes #11, fixes#13
+
+commit b2b8d0537315e979406cb8c97b48f9ea72821ff9
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Mon Jun 20 21:55:10 2016 -0500
+
+    changed it so that there can be zero dependencies
+
+commit d217a4d1a14fe4591a9eaa9a5add8967fbd315be
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Mon Jun 20 21:51:41 2016 -0500
+
+    made priorityQueue global, added unit tests(still debugging) and added to runpfd.out
+
+commit 9adcf1ad60c153c58202353f1c9ba7262a6caa12
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Mon Jun 20 16:46:49 2016 -0500
+
+    Created SpherePFD.c++
+
+commit 5f47072db853f8a7e57edb5c5e5e5ad0aeadd1f6
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Mon Jun 20 16:37:06 2016 -0500
+
+    Impliment Topological Sorting with PFD
+
+commit 6dd3fef858bf126061fb317eb2f77487b86b82ec
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Fri Jun 17 18:30:25 2016 -0500
+
+    Basic Implementation
+
+commit 6d05d97d7a934fd73a39989a11792068d0d879a2
+Merge: 5082d3c b56edc7
+Author: Rhain Kaman <rkaman@cs.utexas.edu>
+Date:   Fri Jun 17 18:27:50 2016 -0500
+
+    Merge branch 'dev' of https://github.com/yang1102/cs371g-pfd into dev
+
+commit 5082d3cb61ce3e736c4203c611d9107f9087c892
+Author: Shuoyi Yang <yangshy2012@gmail.com>
+Date:   Fri Jun 17 17:01:07 2016 -0500
+
+    Initial build
+
+commit b56edc7150856e47d17b93a1e8dd21543b6841fa
+Author: Shuoyi Yang <yangshy2012@gmail.com>
+Date:   Fri Jun 17 17:01:07 2016 -0500
+
+    Initial build
+
+commit 6a99ed758b6f35a2bb68363c2649994973406fec
+Author: yang1102 <yangshy2012@gmail.com>
+Date:   Fri Jun 17 16:40:19 2016 -0500
+
+    Initial commit
