@@ -8,12 +8,12 @@ FILES :=                              \
     RunPFD.c++                    \
     RunPFD.in                     \
     RunPFD.out                    \
-    TestPFD.c++                   \
-    TestPFD.out                   
-    # PFD-tests/sy6955-RunPFD.in   \
-    # PFD-tests/sy6955-RunPFD.out  \
-    # PFD-tests/sy6955-TestPFD.c++ \
-    # PFD-tests/sy6955-TestPFD.out 
+    TestPFD.c++                  \
+    TestPFD.out                  \
+    PFD-tests/sy6955-RunPFD.in   \
+    PFD-tests/sy6955-RunPFD.out  \
+    PFD-tests/sy6955-TestPFD.c++ \
+    PFD-tests/sy6955-TestPFD.out 
 
 CXXFLAGS := -pedantic -std=c++11 -Wall
 LDFLAGS  := -lgtest -lgtest_main -pthread
@@ -111,7 +111,6 @@ clean:
 	rm -f  *.gcov
 	rm -f  *.plist
 	rm -f  PFD.log
-	rm -f  Doxyfile
 	rm -f  gmon.out
 	rm -f  RunPFD
 	rm -f  RunPFD.tmp

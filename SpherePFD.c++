@@ -1,7 +1,6 @@
 // ----------------------------
 // projects/PFD/PFD.c++
 // Copyright (C) 2016
-// Glenn P. Downing
 // ----------------------------
 
 // --------
@@ -13,7 +12,6 @@
 #include <vector>
 #include <list>
 #include <queue>
-#include "PFD.h"
 
 using namespace std;
 

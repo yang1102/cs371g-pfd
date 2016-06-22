@@ -20,27 +20,33 @@
 
 using namespace std;
 
+#define OPTMIZE true
+
+#ifdef OPTMIZE
 extern priority_queue<int,vector<int>,greater<int>> priorityQueue;
+#endif
+
 // ------------
 // PFD_read
 // ------------
 
 /**
- * read two ints from r into i an j
+ * read the input into vector of lists and mark the degree of each task 
  * @param r an istream
- * @param i an int
- * @param j an int
+ * @param data a vector of list<int>
+ * @param degree a vector of int
  * @return true if the read is successful, otherwise false
  */
 bool PFD_read(istream &r, vector<list<int>>& data, vector<int>& degree);
+
 // ------------
 // PFD_eval
 // ------------
 
 /**
- * @param i the beginning of the range, inclusive
- * @param j the end       of the range, inclusive
- * @return the max cycle length of the range [i, j)
+ * @param data stored the each tasks' dependent tasks
+ * @param degree stored the degree of each task
+ * @return the a vector which stored the dependent order of tasks
  */
 vector<int> PFD_eval(vector<list<int>>& data, vector<int>& degree) ;
 
@@ -49,11 +55,9 @@ vector<int> PFD_eval(vector<list<int>>& data, vector<int>& degree) ;
 // -------------
 
 /**
- * print three ints to w
+ * print vector to w
  * @param w an ostream
- * @param i the beginning of the range, inclusive
- * @param j the end       of the range, inclusive
- * @param v the max cycle length
+ * @param result a vector of int which stored the dependent order of tasks
  */
 void PFD_print(ostream &w, vector<int> result);
 

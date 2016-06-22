@@ -1,7 +1,6 @@
 // ----------------------------
 // projects/PFD/PFD.c++
 // Copyright (C) 2016
-// Glenn P. Downing
 // ----------------------------
 
 // --------
@@ -17,15 +16,18 @@
 
 using namespace std;
 
+#define OPTMIZE true
+
+#ifdef OPTMIZE
 priority_queue<int,vector<int>,greater<int>> priorityQueue;
+#endif
+
 // ------------
 // PFD_read
 // ------------
-
-
 bool PFD_read(istream &r, vector<list<int>>& data, vector<int>& degree) {
   int i,j;
-  if (!(r >> i))
+    if (!(r >> i))
     return false;
 
   r >> j;
@@ -40,6 +42,8 @@ bool PFD_read(istream &r, vector<list<int>>& data, vector<int>& degree) {
   for( int k = 0; k< j; ++k)
   {
     int ind, num;
+
+
     r>> ind;
     r>> num;
     degree[ind-1] = num; //degree is number of things it depends on
